@@ -1,0 +1,225 @@
+@import 'config';
+@import 'utilities';
+
+
+#main-nav {
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        padding: 1rem 1.5rem;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-color: $medium-color;
+        }
+
+        &.current {
+            border-color: $main-color;
+        }
+    }
+}
+
+#header {
+    &-home {
+        color: #fff;
+
+        .header-content {
+            background-color: $dark-color;
+            text-align: center;
+            padding-top: 20%;  
+            padding-bottom: 20%;
+
+            h1 {
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+.specials {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+.flex-columns {
+
+    &.flex-reverse .row {
+        flex-direction: row-reverse;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+
+        .column-1, .column-2 {
+            height: 100%;
+        }
+    }
+
+    .column-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+//TESTIMONIALS
+
+.testimonial-container {
+    background-color: #6610F2;
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    max-width:768px;
+    position: relative;
+}
+
+.fa-quote {
+    color: rgba(255,255,255,0.3);
+    position: absolute;
+
+    &-right {
+        left: 40px;
+    }
+
+    &-left {
+        right: 40px;
+    }
+}
+
+
+.testimonial {
+    line-height: 24px;
+    text-align: justify;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .user-image {
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+        object-fit: cover;
+    }
+
+    .user-details {
+        margin-left: 10px;
+    }
+
+    .username {
+        margin: 0;
+    }
+
+    .role {
+        font-weight: normal;
+        margin: 4px 0;
+    }
+}
+
+.progress-bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        padding: 20px 30px;
+    }
+    
+    .fa-quote {
+        display: none;
+    }
+}
+
+//FOOTER
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    height: 250px;
+
+    a {
+        color: #fff;
+    }
+}
+
+.social {
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            padding: .3rem;
+        }
+    }  
+}

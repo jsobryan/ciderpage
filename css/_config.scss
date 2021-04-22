@@ -1,0 +1,13 @@
+$website-width: 1280px;
+$main-color: #E2124D;
+$light-color: #A8DADC;
+$dark-color: #970C34;
+$medium-color: #ccc;
+
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+        } @else {
+        @return #fff;
+    }
+}
