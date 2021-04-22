@@ -1,7 +1,8 @@
 @import 'config';
 @import 'utilities';
+@import 'media';
 
-
+//HEADER AND MAIN NAV
 #main-nav {
     background-color: $main-color;
     display: flex;
@@ -55,66 +56,35 @@
     }
 }
 
+//BEER STYLES
+#specials {
+    background-color: $light-color;
+}
 .specials {
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    
 }
 
 
+//EVENTS
+.events {
+    background-color: $dark-color;
+}
 
-.flex-columns {
-
-    &.flex-reverse .row {
-        flex-direction: row-reverse;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .column {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        flex: 1;
-
-        .column-1, .column-2 {
-            height: 100%;
-        }
-    }
-
-    .column-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 30px;
-    }
-
-    h2 {
-        font-size: 40px;
-        font-weight: 100;
-    }
-
-    h4 {
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin: 20px 0;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.news {
+    background-color: $main-color;
+    margin: 65px;
 }
 
 //TESTIMONIALS
+
+.testimonials {
+    background-color: $medium-color;
+    h1 {
+        text-align: center;
+    }
+}
 
 .testimonial-container {
     background-color: #6610F2;
@@ -194,6 +164,49 @@
         display: none;
     }
 }
+
+//PANELS
+.gallery {
+    background-color: $light-color;
+    padding: 30px;
+    .container {
+        display: flex;
+    }
+}
+
+.panel {
+    background-color: $main-color;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    // border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.8s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
 
 //FOOTER
 

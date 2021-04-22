@@ -18,9 +18,23 @@ body {
     line-height: 1.5;
 }
 
+.line {
+    border: 1px solid #000;
+    margin: 1.5rem 8rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    padding: .08rem;
+}
+
 .container {
     padding: 0 1.5rem;
     margin: auto;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .flex-columns {
