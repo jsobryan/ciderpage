@@ -11,6 +11,11 @@
     align-items: center;
     justify-content: center;
 
+    img {
+        height: 50px;
+        width: 50px;
+    }
+
     ul {
         display: flex;
     }
@@ -42,7 +47,7 @@
     &-home {
         color: #fff;
 
-        .header-content {
+        #header-content {
             background-color: $dark-color;
             text-align: center;
             padding-top: 20%;  
@@ -52,19 +57,136 @@
                 font-size: 4rem;
                 line-height: 1.2;
             }
+
+            img {
+                height: 150px;
+                border-radius: 50%;
+                border: 2px solid #000;
+            }
         }
     }
 }
 
 //BEER STYLES
-#specials {
-    background-color: $light-color;
+
+.ciders {
+    background-color: $medium-color;
+    padding: 30px;
+
+
+    h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid #000;
+        width: 50%;
+        margin: 30px auto;
+    }
 }
-.specials {
+  
+  .card {
+    width: 325px;
+    margin: .5rem auto;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+  }
+  
+  .card__content {
+    text-align: center;
+    position: relative;
+    padding: 15em 5em;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card__content {
+    transform: rotateY(.5turn);
+  }
+  
+  .card__front,
+  .card__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5em 3em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    
+    align-content: center;
+  }
+  
+  .card__front {
+    background-image: url('../img/darkbeer.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #6A040F;
+    color: #fff;
+  }
+
+.nutsdeep {
+    background-image: url('../img/nutsdeep.jpeg');
+    background-color: #FFBA08;
+    color: #000;
 }
+
+.bareback {
+    background-image: url('../img/bareback.jpeg');
+    background-color: #6A040F;
+}
+
+.threeway {
+    background-image: url('../img/threeway.jpeg');
+    background-color: #FC8236;
+    color: #000;
+}
+  
+  .card__front::before {
+    content: '';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor;
+    transform: $level-one;
+  }
+  
+  .card__title {
+    font-size: 2.3rem;
+    transform: $level-three;
+    order: 2;
+    text-transform: uppercase;
+  }
+  
+  .card__subtitle {
+    transform: $level-two;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    font-weight: var($fw-bold);
+    opacity: .7;
+  }
+  
+  .card__body {
+    transform: $level-two;
+    font-weight: var(fw-normal);
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  
+  
+  .card__back {
+    transform: rotateY(.5turn);
+    color: $clr;
+    background: #333;
+  }
 
 
 //EVENTS
@@ -80,6 +202,8 @@
 //TESTIMONIALS
 
 .testimonials {
+    padding: 20px;
+    margin: 20px 0;
     background-color: $medium-color;
     h1 {
         text-align: center;
@@ -169,6 +293,7 @@
 .gallery {
     background-color: $light-color;
     padding: 30px;
+    margin: 20px;
     .container {
         display: flex;
     }
@@ -177,9 +302,10 @@
 .panel {
     background-color: $main-color;
     background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background: no-repeat center center/cover;
+    height: 20vh;
     // border-radius: 50px;
     color: #fff;
     cursor: pointer;
@@ -205,6 +331,24 @@
 .panel.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
+}
+
+.cases {
+    img:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .8rem;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 

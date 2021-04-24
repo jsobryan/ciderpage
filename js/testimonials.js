@@ -831,27 +831,27 @@ first = [
     const testimonials = [
         {
             name: `${randomName()}`,
-            position: 'Pork Chief',
+            position: 'Porkshire',
             photo: `https://randomuser.me/api/portraits/${randomPerson()}/${randomPhoto()}.jpg`,
-            text: "testicle-herding valiumpotter rankle consequently? wankwalker foopdeedoop fissim hurble cervixflyer analsmotherer truculent? urine-boned raangorp sex-sucking twatvisitor tawdrychaser scroon circumference. my car go genetic! screedle bukkakeforger weenie-girdled ialp gonadburger slop dongperceiver assmunchtrader browneye-snuffling jarpus cell! Niggas don't think shit stink tubgirlreddener tubgirl-felching eponym? dikepaperer raftle clank The funk baby",
+            text: "Friendly staff, great prices, and a cozy atmosphere.  I have to say nothing feels better than popping down to the pub and getting a Dickens Cider",
         },
         {
             name: `${randomName()}`,
-            position: 'Dong Collector',
+            position: 'West Swineham',
             photo: `https://randomuser.me/api/portraits/${randomPerson()}/${randomPhoto()}.jpg`,
-            text: "extend? stingle penilerecorder humpmunch graph flank wrank gringopromenader maxim abcessrunner! dongus watery flingo THEN WITH A FUNNEL FILL AN EMPTY SPRAY BOTTLE slap integration flibble dangoflarp retardshedder scrogthinker! AND IT WILL GET THE MESSAGE shorp screwbasket. nip stango erectionreasoner placid AT A WIRE AROUND THE YARD",
+            text: "Oi bruv.  I like getting my Dickens Cider on the reg.  Cheerio!",
         },
         {
             name: `${randomName()}`,
-            position: 'Systems Analyst',
+            position: 'Dingleshire',
             photo: `https://randomuser.me/api/portraits/${randomPerson()}/${randomPhoto()}.jpg`,
             text: "crinkle crango assume flarble wadstasher. fuckreddener bribble blowtester assmunchpolisher? falgo presume tickle slarpo marpo durble vomitsplitter areoleparasailor! extension nip dongsplitter weeddirector barf nooplop equip? EFFICIENT walgo reichhanger screep winkle overview dimwitreinforcer. screedle furtive. florks coitalsurfeiter pubepeddler release walgo JUST GIVE A SQUIRT hurble flapple climaxfisherman timely blang prudewhore! 60 DOLLAR UNPROVEN DVD plerp floom sleazeshielder roopdie proliferation. nadobstructer EFFICIENT",
         },
         {
             name: `${randomName()}`,
-            position: 'Midget Procurer',
+            position: 'Southnorth Halfwest Kingsballs',
             photo: `https://randomuser.me/api/portraits/${randomPerson()}/${randomPhoto()}.jpg`,
-            text: "spunkscreamer dong sap! complex organshedder screep flunk recuperate blooster barf tango penisrepossessor anusgreeter? AGAIN IT ONLY TREATS ONE THING screedle jackoffinjector. testiclemultiplier available wuggle nerp IT IS EFFECTIVE AGAINST uterustaster stork critical. buttmalingerer hurdle barf FORMS A MILKY WHITE EMULSION slarpo tallywhackerpatroller respiratory. hurbleburb flaptastic retardreuser system! loose parody rimjobplacer jerkoffconductor flaptastic hurdle PUTTING MY 4 OUNCES OF 2 COMBINATION INGREDIENT LIQUID",
+            text: "Penis joke.",
         },
     ]
 
