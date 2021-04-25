@@ -6,4 +6,47 @@
     .panel:nth-of-type(4),.panel:nth-of-type(5) {
         display: none;
     }
+
+    .footer {
+    }
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+
+        a {
+            padding: 10px 10px;
+            margin: 0 3px;
+        }
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns {
+
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .flex-grid {
+        
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .team {
+        
+        img {
+            width: 70%;
+        }
+    }
 }

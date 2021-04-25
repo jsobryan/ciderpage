@@ -3,70 +3,92 @@
 @import 'media';
 
 //HEADER AND MAIN NAV
-#main-nav {
-    background-color: $main-color;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-    align-items: center;
-    justify-content: center;
+.hero {
+    background-color: $dark-color;
+    height: 100vh;
+    position: relative;
+    color: #fff;
 
+    img {
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        //puts it in the middle
+        
+        padding: 0 20px;
+
+        h1 {
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 23px;
+            max-width: 600px;
+            margin: 20px 0 30px;
+        }
+    }
+}
+
+.logo {
     img {
         height: 50px;
         width: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 2px;
+    }
+}
+
+//navbar
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //puts logo on one side
+    background-color: $main-color;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    //usual height of navbar
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    transition: 1s;
+
+    &.top {
+        background: transparent;
+    }
+
+    a {
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 5px;
+        transition: .4s ease-in-out;
+
+        &:hover {
+            border-bottom: 2px solid $main-color;
+            
+        }
     }
 
     ul {
         display: flex;
     }
 
-    li {
-        padding: 1rem 1.5rem;
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        border-bottom: 3px transparent solid;
-        padding-bottom: 0.5rem;
-        transition: border-color 0.5s;
-
-        &:hover {
-            border-color: $medium-color;
-        }
-
-        &.current {
-            border-color: $main-color;
-        }
+    .logo {
+        font-weight: 400;
     }
 }
-
-#header {
-    &-home {
-        color: #fff;
-
-        #header-content {
-            background-color: $dark-color;
-            text-align: center;
-            padding-top: 20%;  
-            padding-bottom: 20%;
-
-            h1 {
-                font-size: 4rem;
-                line-height: 1.2;
-            }
-
-            img {
-                height: 150px;
-                border-radius: 50%;
-                border: 2px solid #000;
-            }
-        }
-    }
-}
-
 //BEER STYLES
 
 .ciders {
@@ -289,94 +311,31 @@
     }
 }
 
-//PANELS
-.gallery {
-    background-color: $light-color;
-    padding: 30px;
-    margin: 20px;
-    .container {
-        display: flex;
-    }
-}
-
-.panel {
-    background-color: $main-color;
-    background-size: auto 100%;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    background: no-repeat center center/cover;
-    height: 20vh;
-    // border-radius: 50px;
-    color: #fff;
-    cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: flex 0.8s ease-in;
-}
-
-.panel h3 {
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-}
-
-.panel.active {
-    flex: 5;
-}
-
-.panel.active h3 {
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
-}
-
-.cases {
-    img:hover {
-        opacity: 0.7;
-        transition: 0.3s;
-    }
-}
-
-.gallery-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: .8rem;
-
-    img {
-        height: 100%;
-        width: 100%;
-    }
-}
+//GALLERY
 
 
 //FOOTER
 
-.footer-container{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    background-color: #000;
-    color: #fff;
+.footer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem;
-    height: 250px;
+    text-align: center;
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+
+    .social > * {
+        margin-right: 30px;
+    }
 
     a {
         color: #fff;
-    }
-}
 
-.social {
-
-    ul {
-        display: flex;
-        list-style-type: none;
-
-        li {
-            padding: .3rem;
+        &:hover {
+            color: $main-color;
+            transition: 0.3s;
         }
-    }  
+    }
 }
